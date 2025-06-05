@@ -1,0 +1,33 @@
+{
+    "name": "zaimea/commonredirects",
+    "license": "MIT",
+    "homepage": "https://zaimea.com",
+    "description": "Common redirects for Zaimea",
+    "keywords": [
+        "zaimea.com",
+        "routes",
+        "redirects"
+    ],
+    "authors": [
+        {
+            "name": "Custură Laurențiu",
+            "email": "mail@custura.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zaimea\\CommonRedirects\\": "/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Zaimea\\CommonRedirects\\CommonRedirectsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

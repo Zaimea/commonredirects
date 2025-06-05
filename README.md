@@ -1,0 +1,1 @@
+# Zaimea Common Redirects Routes
