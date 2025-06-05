@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/terms-of-service', function () {
@@ -27,7 +28,7 @@ Route::get('/groups', function () {
 Route::get('/groups/login', function () {
     return redirect('https://groups.zaimea.com/login');
 })->name('groups.login');
-
+dd(Request::url());
 Route::get('/groups/register', function () {
     return redirect('https://groups.zaimea.com/register');
 })->name('groups.register');
