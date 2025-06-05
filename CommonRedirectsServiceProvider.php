@@ -36,6 +36,6 @@ class CommonRedirectsServiceProvider extends ServiceProvider
      */
     protected function configureRoutes(): void
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/redirects.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/redirects.php');
     }
 }
