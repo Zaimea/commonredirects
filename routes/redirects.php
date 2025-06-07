@@ -53,5 +53,5 @@ Route::get('/zaimea/x', function () {
 })->name('zaimea.x');
 
 Route::get('/zaimea/discord', function () {
-    return redirect('#');
+    return redirect('https://discord.gg/K4kmRrhAbW');
 })->name('zaimea.discord');
