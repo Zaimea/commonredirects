@@ -35,3 +35,23 @@ if(Str::doesntContain (Request::url(), 'groups.')){
         return redirect('https://groups.zaimea.com/register');
     })->name('groups.register');
 }
+
+Route::get('/prices', function () {
+    return redirect('https://zaimea.com/pricing');
+})->name('pricing.show');
+
+Route::get('/zaimea/facebook', function () {
+    return redirect('https://www.facebook.com/zaimea.com');
+})->name('zaimea.fb');
+
+Route::get('/zaimea/contact', function () {
+    return redirect('https://zaimea.com/contact');
+})->name('zaimea.contact');
+
+Route::get('/zaimea/x', function () {
+    return redirect('https://x.com/zaimea_com');
+})->name('zaimea.x');
+
+Route::get('/zaimea/discord', function () {
+    return redirect('#');
+})->name('zaimea.discord');
