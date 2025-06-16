@@ -16,7 +16,7 @@ Route::get('/tos', function () {
 
 Route::get('/privacy-policy', function () {
     return redirect('https://zaimea.com/docs/site-policy/main/zaimea-privacy-policies/policy');
-})->name('policy.show');
+})->name('policy-policy.show');
 
 Route::get('/privacy', function () {
     return redirect('https://zaimea.com/docs/site-policy/main/zaimea-privacy-policies/policy');
