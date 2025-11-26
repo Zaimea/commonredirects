@@ -72,4 +72,4 @@ Route::get('/zaimea/github', function (): Redirector|RedirectResponse {
 
 Route::get('/zaimealabs/github', function (): Redirector|RedirectResponse {
     return redirect('https://www.github.com/zaimealabs');
-})->name('zaimea.zaimealabs');
+})->name('zaimealabs.github');
