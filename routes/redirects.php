@@ -65,3 +65,11 @@ Route::get('/zaimea/facebook', function (): Redirector|RedirectResponse {
 Route::get('/zaimea/instagram', function (): Redirector|RedirectResponse {
     return redirect('https://www.instagram.com/zaimeacom');
 })->name('zaimea.instagram');
+
+Route::get('/zaimea/github', function (): Redirector|RedirectResponse {
+    return redirect('https://www.github.com/zaimea');
+})->name('zaimea.github');
+
+Route::get('/zaimealabs/github', function (): Redirector|RedirectResponse {
+    return redirect('https://www.github.com/zaimealabs');
+})->name('zaimea.zaimealabs');
