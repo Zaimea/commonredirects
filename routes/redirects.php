@@ -25,8 +25,16 @@ Route::get('/privacy', function (): Redirector|RedirectResponse {
 })->name('privacy.show');
 
 Route::get('/accounts', function (): Redirector|RedirectResponse {
-    return redirect('https://accounts.1s100.online');
+    return redirect('https://accounts.zaimea.com');
 })->name('accounts.show');
+
+Route::get('/accounts/register', function () {
+    return redirect('https://accounts.zaimea.com/register');
+})->name('accounts.register');
+
+Route::get('/accounts/settings', function () {
+    return redirect('https://accounts.zaimea.com/user/settings/profile');
+})->name('accounts.settings');
 
 if(Str::doesntContain (Request::url(), 'groups.')){
     Route::get('/groups', function (): Redirector|RedirectResponse {
